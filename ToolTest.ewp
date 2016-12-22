@@ -725,7 +725,7 @@
       <name>BUILDACTION</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <prebuild>$PROJ_DIR$\pre-build.bat %$PROJ_DIR$%</prebuild>
+        <prebuild>$PROJ_DIR$\pre-build.bat "$PROJ_DIR$"</prebuild>
         <postbuild></postbuild>
       </data>
     </settings>
