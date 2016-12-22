@@ -36,14 +36,16 @@ BASE_VER = DEF_VAL + '("v0.0.0.0")'
 
 print('Input Argument')
 filename = []
+path = []
 try:
     print(sys.argv[1])
     #filename = os.path.join(sys.argv[1],sys.argv[2])
-    filename = sys.argv[1]
+    path = sys.argv[1]
 except:
     print('No argument passed')
-    filename = './version.h'
-    
+    path = os.getcwd()
+
+filename = os.path.join(path,'version.h')
 print(filename)
 results = []
 with open(filename) as inputfile:

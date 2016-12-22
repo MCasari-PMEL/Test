@@ -1,3 +1,4 @@
 @echo off
-python VersionInc.py %1
+set arg1=%1
+python VersionInc.py %arg1%
 echo on

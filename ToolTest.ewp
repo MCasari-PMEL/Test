@@ -58,11 +58,11 @@
         </option>
         <option>
           <name>RTConfigPath</name>
-          <state>$TOOLKIT_DIR$\LIB\DLIB\dl430fn.h</state>
+          <state>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</state>
         </option>
         <option>
           <name>RTLibraryPath</name>
-          <state>$TOOLKIT_DIR$\LIB\DLIB\dl430fn.r43</state>
+          <state>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</state>
         </option>
         <option>
           <name>Input variant</name>
@@ -117,7 +117,7 @@
         </option>
         <option>
           <name>GHeap20Size</name>
-          <state>###Uninitialized###</state>
+          <state>80</state>
         </option>
         <option>
           <name>GeneralMisraRules98</name>
@@ -350,7 +350,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state></state>
+          <state>$FILE_BNAME$.r43</state>
         </option>
         <option>
           <name>CCLibConfigHeader</name>
@@ -725,7 +725,7 @@
       <name>BUILDACTION</name>
       <archiveVersion>1</archiveVersion>
       <data>
-        <prebuild></prebuild>
+        <prebuild>$PROJ_DIR$\pre-build.bat "$PROJ_DIR$"</prebuild>
         <postbuild></postbuild>
       </data>
     </settings>
@@ -742,7 +742,7 @@
         </option>
         <option>
           <name>OutputFile</name>
-          <state>templproj.d43</state>
+          <state>ToolTest.d43</state>
         </option>
         <option>
           <name>OutputFormat</name>
@@ -808,7 +808,7 @@
         </option>
         <option>
           <name>XclFile</name>
-          <state>$TOOLKIT_DIR$\CONFIG\lnk430F149.xcl</state>
+          <state>$TOOLKIT_DIR$\config\linker\lnk430f149.xcl</state>
         </option>
         <option>
           <name>XclFileSlave</name>
@@ -936,7 +936,7 @@
         </option>
         <option>
           <name>ExtraOutputFile</name>
-          <state>templproj.a43</state>
+          <state>ToolTest.a43</state>
         </option>
         <option>
           <name>ExtraOutputFormat</name>
@@ -2256,6 +2256,9 @@
   </configuration>
   <file>
     <name>$PROJ_DIR$\main.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\version.h</name>
   </file>
 </project>
 
